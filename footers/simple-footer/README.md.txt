@@ -1,0 +1,1 @@
+Egyszeru megoldas a tapados footer-re.
