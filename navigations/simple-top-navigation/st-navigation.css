@@ -1,0 +1,69 @@
+/* ==== GENERAL STYLES ==== */
+
+* {
+  box-sizing: border-box;
+}
+p {
+  font-size: 1rem;
+  font-family: 'Inconsolata', sans-serif;
+}
+/* ==== A SIMPLE TOP NAVIGATION ==== */
+
+nav {
+  background-color:rgba(0,0,0,.9);
+  padding:1rem;
+  
+}
+nav a {
+  text-decoration: none;
+  text-align:center;
+  color:white;
+  display: block;
+  font-family: 'Inconsolata', sans-serif;
+  padding:.5rem 1rem;
+}
+nav a:hover {
+  color: #bbb;
+  transition: background-color .3s ease-in-out;
+}
+nav a.active {
+ border-radius: 9999px; 
+ border: 1px solid hsla(0,0%,100%,.2);
+}
+.active:hover{
+  color: black;
+  background-color: white;
+  transition: background-color .3s ease-in-out;
+}
+@media (min-width: 768px) {
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+   nav a {
+    float: right;
+  }
+
+  .home {
+    float: left;
+  }
+ /* Clearfix */
+    nav::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  body {
+    width: 60%;
+    margin: 5.25rem auto 1.25rem;
+  }
+
+}
+
+p {
+  margin-bottom: 1.25rem;
+  padding: .5rem;
+}
